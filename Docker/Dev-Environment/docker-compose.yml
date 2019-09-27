@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  finastra:
+    image: finastra
+    build: .
+    ports:
+      - 187104:187104

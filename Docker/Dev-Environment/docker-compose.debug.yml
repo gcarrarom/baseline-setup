@@ -1,8 +1,8 @@
 version: '2.1'
 
 services:
-  finastra:
-    image: finastra
+  fancywhale:
+    image: fancywhale
     build:
       context: .
       dockerfile: Dockerfile

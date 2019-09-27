@@ -1,8 +1,8 @@
 version: '2.1'
 
 services:
-  finastra:
-    image: finastra
+  fancywhale:
+    image: fancywhale
     build: .
     ports:
       - 187104:187104

@@ -13,5 +13,6 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'baseline-environment'
+    repository: 'baseline-environment'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'

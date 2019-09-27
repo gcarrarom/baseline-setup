@@ -13,6 +13,6 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'baseline-environment'
-    repository: 'baseline-environment'
+    repository: 'gcarrarom/baseline-environment'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'

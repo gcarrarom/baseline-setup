@@ -10,6 +10,11 @@ First I'd clone this repo on my `~/Source` folder, then link the `.zshrc` file t
 ```shell
 ln -s ~/Source/baseline-setup/MacOS/.zshrc ~/.zshrc
 ```
+Then clone all the necessary plugins:
+```shell
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+```
 
 ## Software
 The baseline software I'd install on MacOS usually comes from Brew, but there are some exceptions.

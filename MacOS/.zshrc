@@ -12,6 +12,7 @@ plugins=(
         kubectl
         git
         kubectl-complete
+        zsh-syntax-highlighting
     )
     
 SPACESHIP_KUBECTL_SHOW=true
@@ -21,4 +22,3 @@ SPACESHIP_KUBECONTEXT_SHOW=true
 source $ZSH/oh-my-zsh.sh
 autoload bashcompinit && bashcompinit
 source /usr/local/etc/bash_completion.d/az 
-source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -20,4 +20,5 @@ SPACESHIP_KUBECONTEXT_SHOW=true
 
 source $ZSH/oh-my-zsh.sh
 autoload bashcompinit && bashcompinit
-source /usr/local/etc/bash_completion.d/az
+source /usr/local/etc/bash_completion.d/az 
+source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

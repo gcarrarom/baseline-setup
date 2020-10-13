@@ -13,6 +13,7 @@ plugins=(
         git
         kubectl-complete
         zsh-syntax-highlighting
+        fzf-tab
     )
     
 SPACESHIP_KUBECTL_SHOW=true

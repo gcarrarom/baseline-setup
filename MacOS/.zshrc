@@ -20,7 +20,7 @@ SPACESHIP_KUBECTL_SHOW=true
 SPACESHIP_KUBECTL_VERSION_SHOW=false
 SPACESHIP_KUBECONTEXT_SHOW=true
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source $ZSH/oh-my-zsh.sh
 autoload bashcompinit && bashcompinit
 source /usr/local/etc/bash_completion.d/az 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

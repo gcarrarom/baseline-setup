@@ -40,7 +40,16 @@ Then clone all the necessary plugins:
 
 ```shell
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/djui/alias-tips.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/alias-tips
+git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/autoupdate
+git clone https://github.com/gcarrarom/oh-my-guish.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/oh-my-guish
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/Aloxaf/fzf-tab ~ZSH_CUSTOM/plugins/fzf-tab
+```
+
+To ensure that FZF is used for the ＾+R key binding, you just need to run this brew command:
+```shell
+$(brew --prefix)/opt/fzf/install
 ```
 
 Also, to make sure the fonts are going to look good in the terminal, it's necessary to download a new font. Right now I'm using this one:

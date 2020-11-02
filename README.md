@@ -26,6 +26,10 @@ brew cask install $(cat ~/Source/baseline-setup/MacOS/brewcaskdump)
 ## Shell
 
 In MacOS I'd install oh-my-zsh and change some stuff around.
+To install oh-my-zsh here's the command:
+```shell
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 First I'd clone this repo on my `~/Source` folder, then link the `.zshrc` file to `~/.zshrc`:
 
 ```shell
@@ -38,3 +42,16 @@ Then clone all the necessary plugins:
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/Aloxaf/fzf-tab ~ZSH_CUSTOM/plugins/fzf-tab
 ```
+
+Also, to make sure the fonts are going to look good in the terminal, it's necessary to download a new font. Right now I'm using this one:
+https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip
+
+If you don't like this font, the nerdfonts website has really great fonts!
+https://www.nerdfonts.com/font-downloads
+
+Also, to create the option key combinations, this can be set as iterm settings:
+| Shortcut | config | 
+| :------: | :----: |
+| ⌥+← | escape sequence + b |
+| ⌥+→ | escape sequence + f | 
+| ⌘+Delete | hex signal + 0x15 |

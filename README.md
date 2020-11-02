@@ -50,8 +50,9 @@ If you don't like this font, the nerdfonts website has really great fonts!
 https://www.nerdfonts.com/font-downloads
 
 Also, to create the option key combinations, this can be set as iterm settings:
-| Shortcut | config | 
-| :------: | :----: |
-| ⌥+← | escape sequence + b |
-| ⌥+→ | escape sequence + f | 
-| ⌘+Delete | hex signal + 0x15 |
+| Shortcut | config | behaviour | 
+| :------: | :----: | :-------: |
+| ⌥+← | escape sequence + b | skip one word backwards | 
+| ⌥+→ | escape sequence + f | skipe one word forwards | 
+| ⌘+delete | hex code + 0x15 | delete the line |
+| ⌥+delete | hex code + 0x17 | delete one word | 

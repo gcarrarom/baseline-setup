@@ -1,0 +1,24 @@
+[character]                            # The name of the module we are configuring is "character"
+success_symbol = "[⌁](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+error_symbol = "[⌁](bold red)"
+
+[kubernetes]
+format = 'at [🛸 $context \($namespace\)](blue) '
+disabled = false
+
+[time]
+disabled = false
+format = '[\[ $time \]]($style) '
+time_format = "%T"
+utc_time_offset = "-5"
+time_range = "10:00:00-14:00:00"
+
+[cmd_duration]
+show_notifications = true
+
+[nodejs]
+disabled = true
+
+[directory]
+format = "in [$path]($style)[$read_only]($read_only_style) "
+home_symbol = "🏠"

@@ -30,10 +30,11 @@ To install oh-my-zsh here's the command:
 ```shell
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-First I'd clone this repo on my `~/Source` folder, then link the `.zshrc` file to `~/.zshrc`:
+First I'd clone this repo on my `~/Source` folder, then link the `.zshrc` file to `~/.zshrc` and `starship.toml` to `~/.config/starship.toml`:
 
 ```shell
 ln -s ~/Source/baseline-setup/MacOS/.zshrc ~/.zshrc
+ln -s ~/Source/baseline-setup/MacOS/starship.toml ~/.config/starship.toml
 ```
 
 Then clone all the necessary plugins:

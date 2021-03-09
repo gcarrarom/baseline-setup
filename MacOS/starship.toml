@@ -9,7 +9,7 @@ success_symbol = "[⌁](bold green)"
 error_symbol = "[⌁](bold red)"
 
 [kubernetes]
-format = 'at [☸ $context \($namespace\)](bold blue) '
+format = 'at [☸️ $context \($namespace\)](bold blue) '
 disabled = false
 
 [time]

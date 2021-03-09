@@ -1,14 +1,20 @@
-[character]                            # The name of the module we are configuring is "character"
-success_symbol = "[⌁](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
+format = """$time\
+$directory\
+${custom.azsub}\
+$kubernetes
+$character"""
+
+[character]
+success_symbol = "[⌁](bold green)"
 error_symbol = "[⌁](bold red)"
 
 [kubernetes]
-format = 'at [🛸 $context \($namespace\)](blue) '
+format = 'at [☸ $context \($namespace\)](bold blue) '
 disabled = false
 
 [time]
 disabled = false
-format = '[\[ $time \]]($style) '
+format = '[$time]($style) '
 time_format = "%T"
 utc_time_offset = "-5"
 time_range = "10:00:00-14:00:00"
@@ -20,5 +26,12 @@ show_notifications = true
 disabled = true
 
 [directory]
-format = "in [$path]($style)[$read_only]($read_only_style) "
+format = "[$path]($style)[$read_only]($read_only_style) "
 home_symbol = "🏠"
+
+#[custom.azsub]
+#command = "cat $HOME/.azure/azureProfile.json | jq -r '.subscriptions[] | select(.isDefault == true) | .name'"
+#format = "az [$symbol($output )]($style)"
+#symbol = "☁️"
+#shell = ["zsh", "-c", "-"]
+#when = "EXP=$(cat $HOME/.azure/accessTokens.json | jq -r '. | sort_by(.expiresOn) | reverse | .[0].accessToken' | cut -d '.' -f 2 | base64 -d) && if [[ $(date +"%s") -gt $(echo "$EXP}" | jq '.exp') ]]; then true; else false;  fi"

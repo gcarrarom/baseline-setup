@@ -33,5 +33,6 @@ eval "$(gh completion -s zsh)"
 source $ZSH/oh-my-zsh.sh
 autoload bashcompinit && bashcompinit
 source /usr/local/etc/bash_completion.d/az 
+source /usr/local/etc/bash_completion.d/jira.sh 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(starship init zsh)"

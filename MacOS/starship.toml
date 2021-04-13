@@ -44,9 +44,8 @@ when = 'cat "$HOME/Library/Application Support/.jiractl/config.json" | jq -e ".p
 [shell]
 disabled = false
 
-#[custom.azsub]
-#command = "cat $HOME/.azure/azureProfile.json | jq -r '.subscriptions[] | select(.isDefault == true) | .name'"
-#format = "az [$symbol($output )]($style)"
-#symbol = "☁️"
-#shell = ["zsh", "-c", "-"]
-#when = "EXP=$(cat $HOME/.azure/accessTokens.json | jq -r '. | sort_by(.expiresOn) | reverse | .[0].accessToken' | cut -d '.' -f 2 | base64 -d) && if [[ $(date +"%s") -gt $(echo "$EXP}" | jq '.exp') ]]; then true; else false;  fi"
+[custom.azsub]
+command = "cat $HOME/.azure/azureProfile.json | jq -r '.subscriptions[] | select(.isDefault == true) | .name'"
+format = "az [$symbol ( $output )]($style)"
+symbol = "☁️"
+when = "EXP=$(cat $HOME/.azure/accessTokens.json | jq -r '. | sort_by(.expiresOn) | reverse | .[0].accessToken' | cut -d '.' -f 2 | base64 -d) && TIMEEXP=$(echo $EXP'}' | jq '.exp') && if [[ $(date +'%s') -gt $TIMEEXP ]]; then return 0; else return 10; fi"

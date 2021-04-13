@@ -37,7 +37,7 @@ format = "[$path]($style)[$read_only]($read_only_style) "
 home_symbol = "🏠"
 
 [custom.jiractl]
-command = 'cat "$HOME/Library/Application Support/.jiractl/config.json" | jq -r "[to_entries[] | select(.key != \"apikey\" and .key != \"endpoint\" and .key != \"current_user\") | \"\(.key): \(.value)\"] | join(\" \")"'
+command = 'cat "$HOME/Library/Application Support/.jiractl/config.json" | jq -r "[to_entries[] | select(.key != \"apikey\" and .key != \"endpoint\" and .key != \"api_endpoint\" and .key != \"current_user\") | \"\(.key): \(.value)\"] | join(\" \")"'
 format = "jira [($output)](purple) "
 when = 'cat "$HOME/Library/Application Support/.jiractl/config.json" | jq -e ".project != null"'
 

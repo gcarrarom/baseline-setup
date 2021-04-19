@@ -11,7 +11,9 @@ azcopy
 azure-cli
 balena-cli
 bdw-gc
+bitwarden-cli
 boost
+brotli
 bzip2
 c-ares
 cairo
@@ -19,6 +21,7 @@ cask
 catimg
 certbot
 cmake
+coreutils
 cowsay
 dav1d
 dialog
@@ -100,6 +103,7 @@ libtiff
 libtool
 libunistring
 libusb
+libuv
 libvidstab
 libvorbis
 libvpx
@@ -109,9 +113,11 @@ libxcb
 libxdmcp
 libxext
 libxrender
+libzip
 links
 little-cms2
 lzo
+m4
 mpdecimal
 mysql
 ncdu
@@ -159,6 +165,7 @@ tesseract
 tesseract-lang
 thefuck
 theora
+tldr
 tree
 unbound
 vault

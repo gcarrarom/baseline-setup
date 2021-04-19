@@ -4,17 +4,17 @@ export ZSH=$HOME/.oh-my-zsh
 
 
 plugins=(
-        alias-tips
-        autoupdate
-        oh-my-guish
-        provides-ops
-        zsh-autosuggestions
-        kubectl
-        git
-        zsh-syntax-highlighting
-        fzf-tab
-        fzf-marks
-    )
+    alias-tips
+    autoupdate
+    oh-my-guish
+    provides-ops
+    zsh-autosuggestions
+    kubectl
+    git
+    zsh-syntax-highlighting
+    fzf-tab
+    fzf-marks
+)
     
 #SPACESHIP_KUBECTL_SHOW=true
 #SPACESHIP_KUBECTL_VERSION_SHOW=false
